@@ -2,3 +2,18 @@ Sat 30 Mar 2024 10:24:13 PM UTC:
  tests:  0|6
 total_score: 0/70
 31c9e62
+Sat 30 Mar 2024 10:25:39 PM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:33:3: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   33 |   list[0] = (List *)malloc(sizeof(List));]
+      |   ^~~~
+      |   List
+list.c:33:3: note: each undeclared identifier is reported only once for each function it appears in
+list.c:33:42: error: expected statement before ‘]’ token
+   33 |   list[0] = (List *)malloc(sizeof(List));]
+      |                                          ^
+Compilation failed
+348e246
