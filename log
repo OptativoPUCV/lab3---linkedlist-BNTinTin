@@ -100,3 +100,9 @@ list.c:51:23: error: ‘List’ {aka ‘struct List’} has no member named ‘n
       |                       ^~
 Compilation failed
 f075a85
+Sat 30 Mar 2024 10:35:24 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|5
+total_score: 15/70
+d81d713
