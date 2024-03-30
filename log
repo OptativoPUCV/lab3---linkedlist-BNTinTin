@@ -17,3 +17,20 @@ list.c:33:42: error: expected statement before ‘]’ token
       |                                          ^
 Compilation failed
 348e246
+Sat 30 Mar 2024 10:25:52 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:33:17: error: invalid initializer
+   33 |   int list[0] = (List *)malloc(sizeof(List));]
+      |                 ^
+list.c:33:46: error: expected statement before ‘]’ token
+   33 |   int list[0] = (List *)malloc(sizeof(List));]
+      |                                              ^
+list.c:33:7: error: unused variable ‘list’ [-Werror=unused-variable]
+   33 |   int list[0] = (List *)malloc(sizeof(List));]
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ba0b7c5
