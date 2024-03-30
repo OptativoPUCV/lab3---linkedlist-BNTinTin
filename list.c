@@ -30,8 +30,9 @@ Node * createNode(void * data) {
 
 List * createList() 
 {
-  int list[0] = (List *)malloc(sizeof(List));
-  return list;
+  lista->prev = NULL;
+  lista->next = NULL;
+  return lista;
 }
 
 void * firstList(List * list) {
