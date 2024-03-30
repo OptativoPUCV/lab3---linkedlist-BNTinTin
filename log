@@ -141,3 +141,15 @@ Sat 30 Mar 2024 10:46:27 PM UTC:
  tests:  9|3
 total_score: 35/70
 86ea278
+Sat 30 Mar 2024 11:04:47 PM UTC: 
+ list.c | 22 ++++++++++++++++++----
+ 1 file changed, 18 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c:105:2: error: expected ‘;’ before ‘void’
+  105 | n
+      |  ^
+      |  ;
+  106 | void pushCurrent(List * list, void * data)
+      | ~~~~
+Compilation failed
+a1c7dc6
