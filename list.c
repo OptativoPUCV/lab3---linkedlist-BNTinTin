@@ -60,8 +60,13 @@ void * nextList(List * list)
   return list->current->data;
 }
 
-void * lastList(List * list) {
-    return NULL;
+void * lastList(List * list) 
+{
+  while (list->current->next != NULL)
+  {
+    return list->current->next;
+  }
+  return NULL;
 }
 
 void * prevList(List * list) {
