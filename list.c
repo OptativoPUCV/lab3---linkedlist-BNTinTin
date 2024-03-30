@@ -62,11 +62,12 @@ void * nextList(List * list)
 
 void * lastList(List * list) 
 {
-  while (list->current->next != NULL)
-  {
-    return list->current->next;
+  if (list->tail == NULL) {
+    return NULL;
   }
-  return NULL;
+  list->current = list->tail;
+  return list->current->data;
+
 }
 
 void * prevList(List * list) {
