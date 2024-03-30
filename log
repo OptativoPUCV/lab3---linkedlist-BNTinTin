@@ -48,3 +48,18 @@ list.c:33:7: error: unused variable ‘list’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 a3bd2a2
+Sat 30 Mar 2024 10:26:16 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:33:17: error: invalid initializer
+   33 |   int list[0] = (List *)malloc(sizeof(List));
+      |                 ^
+list.c:34:10: error: returning ‘int *’ from a function with incompatible return type ‘List *’ {aka ‘struct List *’} [-Werror=incompatible-pointer-types]
+   34 |   return list;
+      |          ^~~~
+list.c:34:10: error: function returns address of local variable [-Werror=return-local-addr]
+cc1: all warnings being treated as errors
+Compilation failed
+aed3bd7
