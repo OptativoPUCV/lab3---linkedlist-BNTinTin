@@ -102,7 +102,7 @@ void pushBack(List * list, void * data) {
     list->current = list->tail;
     pushCurrent(list,data);
 }
-n
+
 void pushCurrent(List * list, void * data) 
 {
 }

@@ -153,3 +153,9 @@ list.c:105:2: error: expected ‘;’ before ‘void’
       | ~~~~
 Compilation failed
 a1c7dc6
+Sat 30 Mar 2024 11:05:15 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+bfebfeb
